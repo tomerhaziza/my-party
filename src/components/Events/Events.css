@@ -1,0 +1,11 @@
+.events {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}

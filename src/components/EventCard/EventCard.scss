@@ -1,0 +1,89 @@
+.card {
+  flex-basis: 27%;
+  margin: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  .event-image {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+  }
+
+  .like-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    .followed {
+      color: rgb(206, 0, 0);
+      stroke: #1b1b1b;
+    }
+
+    .unfollowed {
+      color: rgb(228, 228, 228);
+      stroke: #494949;
+    }
+    .followed,
+    .unfollowed {
+      font-size: 3rem;
+      stroke-width: 1px;
+    }
+  }
+
+  .event-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    background-color: rgba(0, 8, 20, 0.8);
+    padding: 3px;
+    h3 {
+      color: whitesmoke;
+      font-family: 'Nunito', sans-serif;
+    }
+  }
+
+  .event-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-style {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    color: rgb(56, 56, 56);
+    &:hover {
+      color: rgb(31, 31, 31);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    flex-basis: 35%;
+    flex-grow: 0.5;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .card {
+    flex-basis: 50%;
+    flex-grow: 0.5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex-basis: 100%;
+    margin: 0 4% 30px;
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/**
+create_lang_dict.js
+lang.js
+src

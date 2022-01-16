@@ -1,0 +1,13 @@
+.age-picker {
+  display: flex;
+  min-height: 33px;
+  font-size: 1.1rem;
+  .slider-component {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .selected-age-display {
+    width: 100px;
+    padding: 3px 10px 3px 5px;
+  }
+}

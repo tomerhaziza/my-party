@@ -1,0 +1,9 @@
+.event-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6px 3px;
+  > p {
+    font-size: 15px;
+  }
+}

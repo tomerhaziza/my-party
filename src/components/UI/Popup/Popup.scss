@@ -1,0 +1,115 @@
+.pop-up-modal {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade-in 0.3s;
+  border-radius: 25px 25px;
+  box-shadow: 0px 0px 20px 0px #0000005e;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+
+  .pop-up-header {
+    background-color: #0a214a;
+    border-radius: 25px 25px 0 0;
+    color: #fff;
+    padding: 1.25rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    cursor: grabbing;
+    .close-button {
+      width: 24px;
+    }
+
+    .title {
+      text-align: center;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    svg {
+      cursor: pointer;
+    }
+
+    .center-fix {
+      width: 24px;
+    }
+  }
+  .pop-up-body {
+    color: #0b2349;
+    font-weight: 500;
+    padding: 1rem 1rem 0;
+    min-height: 80px;
+    text-align: center;
+  }
+  .pop-up-footer {
+    padding: 1rem;
+    .buttons {
+      display: flex;
+      padding-bottom: 10px;
+      justify-content: center;
+
+      button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 42px;
+        color: #ffffff;
+        border: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-radius: 25px;
+        width: 100%;
+        max-width: 150px;
+        margin: 0 15px;
+        &:hover {
+          opacity: 0.9;
+        }
+        &:active {
+          opacity: 1;
+        }
+      }
+      .accept-btn {
+        background-color: #003ff7;
+      }
+
+      .cancel-btn-2 {
+        background-color: #b9bfca;
+      }
+
+      .ok-btn {
+        background-color: #003ff7;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(99, 99, 99, 0.3);
+  backdrop-filter: blur(0.7px);
+  animation: fade-in 0.3s;
+}
